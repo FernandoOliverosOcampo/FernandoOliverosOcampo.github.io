@@ -16,26 +16,8 @@ lista.forEach((item) =>
     item.addEventListener('click', activarLink)
 )
 */
+
 //modales
-/* MODAL Eliminar */
-// var modal = document.getElementById("targetModal");
-// var btnAbrirModal = document.getElementById("btnAbrirModal");
-// var btnCerrarModal = document.getElementsByClassName("cerrar-modal")[0];
-
-
-// btnAbrirModal.onclick = function () {
-//   modal.style.display = "block";
-// }
-
-// btnCerrarModal.onclick = function () {
-//   modal.style.display = "none";
-// }
-
-// window.onclick = function (event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
 
 var openModalLinks = document.querySelectorAll('a[data-target]'); // seleccionar todas las etiquetas "a" con atributo "data-target"
 
@@ -64,8 +46,3 @@ for (var i = 0; i < closeModalButtons.length; i++) {
   });
 }
 
-// var btnCerrarModal = document.getElementsByClassName(".cerrar-modal");
-
-// btnCerrarModal.onclick = function () {
-//   modal.style.display = "none";
-// }

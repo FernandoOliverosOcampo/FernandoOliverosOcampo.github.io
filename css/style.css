@@ -43,10 +43,8 @@ body {
 
 .icono-menu,
 .icono-menu-2,
-.icono-menu-3,
-.icono-menu-4,
-.icono-menu-5 {
-  margin: 0;
+.icono-menu-3{
+  margin-left:30px;
   padding: 12px;
 
 }
@@ -54,13 +52,14 @@ body {
 .icono-menu-5 {
   margin-top: 0vh;
 }
-
-.fa-solid {
+.icon{
   color: white;
+  cursor: pointer;
+  font-size: 40px;
 }
-
-.fa-solid:hover {
-  color: #d5d3d7;
+.icon:hover {
+  cursor: pointer;
+  color: #c58bff;
 }
 
 /* FIN MENU*/
@@ -123,6 +122,12 @@ body {
   color: white;
   padding: 1vh 2vw;
   font-size: 20px;
+  cursor: pointer;
+}
+.contacto:hover{
+  box-shadow: 0 10px 14px rgba(71, 71, 71, 0.2);
+  cursor: pointer;
+  color: rgb(255, 255, 255);
 }
 
 /*MODALES*/
@@ -356,11 +361,6 @@ body {
   border-radius: 2%;
   background-color: #191919;
   color: azure;
-   /* 
-  width: 22vw;
-  padding: 0.6vw;
-  */
- 
   width: 30vw;
   padding: 1vw;
 }
@@ -398,7 +398,6 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
 .proyectos-grilla .tarjeta .tarjeta-icono img {
   height: 5vh;
   width: auto;
@@ -408,34 +407,27 @@ body {
   display: flex;
   column-gap: 0.3vw;
   }
-
 .proyectos-grilla .tarjeta .tarjeta-comentarios .tarjeta-comentarios-grilla .tarjeta__comentario {
   font-size: 0.7vw;
 }
-
 .proyectos-grilla .tarjeta .tarjeta-comentarios .tarjeta-comentarios-grilla .tarjeta-comentarios-bloque {
   padding: 0.1vw;
   border-radius: 10%;
 }
-
 .proyectos-grilla .tarjeta .tarjeta-lenguaje .tarjeta__lenguaje{
   font-size: 0.9vw;
 }
-
 .proyectos-grilla .tarjeta .tarjeta-titulo .tarjeta__titulo{
   text-transform: uppercase;
   font-size: 1.2vw;
 }
-
 .proyectos-grilla .tarjeta .tarjeta-descripcion .tarjeta__descripcion{
   font-size: 0.95vw;
   line-height: 1.5;
 }
-
 .proyectos-grilla .tarjeta .tarjeta-boton a {
   color: #59bd85;
 }
-
 /*FOOTER*/
 .footer-distributed {
   grid-area: footer;
@@ -447,14 +439,12 @@ body {
   font: normal 16px sans-serif;
   padding: 45px 50px;
 }
-
 .footer-distributed .footer-left p {
   color: #8f9296;
   font-size: 14px;
   margin: 0;
 }
 /* Footer links */
-
 .footer-distributed p.footer-links {
   font-size: 18px;
   font-weight: bold;
@@ -463,7 +453,6 @@ body {
   padding: 0;
   transition: ease .25s;
 }
-
 .footer-distributed p.footer-links a {
   display: inline-block;
   line-height: 1.8;
@@ -504,28 +493,25 @@ body {
   margin-left: 3px;
   transition:all .25s;
 }
-
 .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
 
 .footer-distributed p.footer-links a:hover{text-decoration:underline;}
 
-
 /*RESPONSIVE*/
-
-
 @media only screen and (max-width: 600px) {
-/*MENU*/
-.contenido-todo{
+.principal-contenido{
   display: grid;
   grid-template-areas: 
   "menu"
   "derecha"
   "footer";
-  grid-template-rows: 10vh 50vh 20vh;
+  grid-template-rows: auto;
   grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
 }
 
-.navigation .lista-menu{
+.contenido-izquierda{
   grid-area: menu;
 }
 
@@ -537,37 +523,7 @@ body {
   grid-area: footer;
 }
 
-/*MENU*/
-.navigation .lista-menu {
-  grid-area: menu;
-  width: 50vw;
-  background: #fff;
-  transition: 0.5s;
-  display: flex;
-  height: 20vh;
-  border-radius: 10px;
-}
-
-.menu {
-  background-color: #131417;
-  border-radius: 1vw;
-  display: flex;
-  align-items: center;
-  height: 8vh;
-  width: auto;
-  justify-content: center;
-}
-
-.navigation .lista-menu ul{
-  flex-direction: row;
-  gap: 0px;
-  width: 20%;
-}
-
-.iconos {
-  width: auto;
-  display: flex;
-}
+/*CONTENIDO DERECHA*/
 
 .contenido-derecha {
   border-radius: 0px;
@@ -589,6 +545,7 @@ body {
 
 .contenido-derecha .contenido .titulo{
   grid-area: titulo;
+  text-align: center;
 }
 .contenido-derecha .contenido .concepto{
   grid-area: conceptos;
@@ -628,8 +585,11 @@ body {
   padding: 1vh 2vw;
   font-size: 20px;
 }
-
-
+.contacto:hover{
+  box-shadow: 0 10px 14px rgba(71, 71, 71, 0.2);
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
 /*modal*/
 .modal{
   flex-direction: column;
@@ -779,7 +739,7 @@ body {
   }
 
 .proyectos-grilla .tarjeta .tarjeta-comentarios .tarjeta-comentarios-grilla .tarjeta__comentario {
-  font-size: 1.5vw;
+  font-size: 2.3vw;
 }
 
 .proyectos-grilla .tarjeta .tarjeta-lenguaje .tarjeta__lenguaje{
@@ -788,11 +748,11 @@ body {
 
 .proyectos-grilla .tarjeta .tarjeta-titulo .tarjeta__titulo{
   text-transform: uppercase;
-  font-size: 2.5vw;
+  font-size: 3.5vw;
 }
 
 .proyectos-grilla .tarjeta .tarjeta-descripcion .tarjeta__descripcion{
-  font-size: 2vw;
+  font-size: 3vw;
   line-height: 1.5;
 }
 
@@ -813,7 +773,4 @@ body {
 .footer-distributed .footer-left p {
   text-align: center;
 }
-
-
-
 }
