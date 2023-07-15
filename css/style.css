@@ -31,19 +31,20 @@ button:hover {
 li {
     list-style: none;
 }
+
 /*MENU*/
-a{
+a {
 
     text-decoration: none;
     color: currentColor;
 }
 
-a:hover{
+ a:hover {
 
     color: currentColor;
 }
 
-header{
+header {
 
     width: 100vw;
     height: 12vh;
@@ -53,7 +54,7 @@ header{
     align-items: center;
 }
 
-header .container-fluid{
+header .container-fluid {
 
     width: 100%;
     padding: 0 60px;
@@ -62,21 +63,21 @@ header .container-fluid{
     justify-content: space-between;
 }
 
-@media(max-width:992px){
+@media(max-width:992px) {
 
-    header .container-fluid{
+    header .container-fluid {
 
         padding: 0 5%;
     }
 }
 
-header .navb-logo img{
+header .navb-logo img {
 
     width: 140px;
     height: 66px;
 }
 
-header .navb-items{
+header .navb-items {
 
     display: flex;
     align-items: center;
@@ -84,7 +85,7 @@ header .navb-items{
     letter-spacing: 3px;
 }
 
-header .item{
+header .item {
 
     text-align: center;
     margin-inline: 15%;
@@ -98,46 +99,46 @@ header .item{
     cursor: pointer;
 }
 
-header .item:hover{
+header .item:hover {
 
     border-bottom: 3px solid #999999;
     border-top: 3px solid #999999;
 }
 
-header .mobile-toggler{
+header .mobile-toggler {
 
     font-size: 30px;
 }
-
 /* modal */
 
-.modal-dialog{
-
+.modal-dialog {
     margin: 0;
     width: 430px;
 }
+
 /*BANNER*/
-.banner-container{
-position: relative;
-background-size: cover;
-width: 100%;
-height: 90vh;
-/* fallback for old browsers */
-background: -webkit-linear-gradient(to right, hsla(320, 20%, 97%, 0.781), hsla(317, 45%, 52%, 0.664)), url(../imagenes/portada.webp);
-/* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, hsla(320, 20%, 97%, 0.781), hsla(320, 20%, 97%, 0.781)), url(../imagenes/portada.webp);
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-background-attachment: fixed;
-/*background-color: #ff0000;*/
-background-repeat: no-repeat;
+.banner-container {
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(320, 20%, 97%, 0.781), hsla(317, 45%, 52%, 0.664)), url(../imagenes/portada.webp);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(320, 20%, 97%, 0.781), hsla(320, 20%, 97%, 0.781)), url(../imagenes/portada.webp);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    /*background-color: #ff0000;*/
+    background-repeat: no-repeat;
 
 }
-#text{
-text-align: center;
-width: 100vw;
-font-size: 60px;
-color:black;
-text-transform: uppercase;
+
+#text {
+    text-align: center;
+    width: 100vw;
+    font-size: 60px;
+    color: black;
+    text-transform: uppercase;
 }
 
 
@@ -175,7 +176,7 @@ text-transform: uppercase;
 }
 
 .contenido-derecha img {
-    margin:20px;
+    margin: 20px;
     height: 50vh;
     width: auto;
     box-shadow: 0 0 0 #494949;
@@ -244,13 +245,12 @@ text-transform: uppercase;
 .chat-box-body {
     padding: 15px;
 }
-
 .mensaje {
-    margin: 10px;
+    margin: 5px;
+    
 }
-
 .btn {
-    padding: 0 8px;
+    padding: 1px;
     border-radius: 4px;
     text-decoration: none;
     color: #fff;
@@ -261,10 +261,8 @@ text-transform: uppercase;
 
 .btn-whatsapp {
     background-color: #25d366;
-    height: 6vh;
     width: 12vw;
     text-align: start;
-    
 }
 
 .btn-whatsapp:hover {
@@ -315,22 +313,20 @@ text-transform: uppercase;
         transform: scale(2.5);
     }
 }
-/*Titulo*/
-.Titulo-portafolio{
-    background: #eee;
-}
- .Titulo{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background: #eee;
-}
-.Titulo h2{
-    margin-top:10px;
-    font-size:2.5vw ;
-    text-transform:capitalize;
-}
+
 /*CONTENIDO LUGAR*/
+.slider {
+    display: grid;
+    grid-template-areas:
+        "titulo"
+        "slider"
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    background: #eee;
+
+}
+
 .container-lugares-slider {
     background: #eee;
     display: flex;
@@ -339,12 +335,22 @@ text-transform: uppercase;
     min-height: 60vh;
     overflow: hidden;
     position: relative;
+    margin-bottom: 10px;
+}
+.Titulo{
+    grid-area: titulo;
+    text-align: center;
+    
+}
+.Titulo h2{
+    margin-top:20px;
 }
 
-
 .container-lugares {
+    grid-area: slider;
     width: 100%;
     padding: 10px 40px;
+    margin-bottom: 10px;
 }
 
 .container-lugares .swiper-container {
@@ -388,9 +394,9 @@ text-transform: uppercase;
     grid-area: lenguaje;
     margin-top: 1.5vh;
     text-align: end;
-    text-transform:uppercase;
-    
-    
+    text-transform: uppercase;
+
+
 }
 
 .tarjeta .tarjeta-titulo {
@@ -402,7 +408,7 @@ text-transform: uppercase;
     grid-area: descripcion;
     text-align: start;
     width: 20vw;
-    
+
 }
 
 .tarjeta .tarjeta-comentarios {
@@ -425,22 +431,22 @@ text-transform: uppercase;
 
 .tarjeta .tarjeta-lenguaje .tarjeta__lenguaje {
     font-size: 0.9vw;
-    padding-right:1.5vw;
+    padding-right: 1.5vw;
 }
 
 .tarjeta .tarjeta-titulo .tarjeta__titulo {
     text-transform: uppercase;
     font-size: 1.2vw;
-    margin-left:5px;
-    margin-right:5px;
-    
+    margin-left: 5px;
+    margin-right: 5px;
+
 }
 
 .tarjeta .tarjeta-descripcion .tarjeta__descripcion {
     font-size: 0.95vw;
     line-height: 1.5;
     overflow-wrap: break-word;
-    padding-right:1vw;
+    padding-right: 1vw;
 }
 
 .tarjeta .tarjeta-boton a {
@@ -495,17 +501,21 @@ text-transform: uppercase;
     justify-content: space-between;
     font-size: 1vw;
 }
-.footer-links h3{
+
+.footer-links h3 {
     font-size: 1.5vw;
 }
+
 .footer-links ul a li {
     list-style-type: none;
     padding: 10px;
 }
+
 .footer-links ul a {
     text-decoration: none;
     color: #6e6b6b;
 }
+
 .footer-contactus h2 {
     text-align: center;
     font-size: 1.5vw;
@@ -539,16 +549,17 @@ text-transform: uppercase;
 
 @media(max-width: 986px) {
     html {
-        font-size: 55%;
+        font-size: 45%;
     }
 }
 
 @media(max-width: 768px) {
+
     /*Banner*/
-    #text{
+    #text {
         font-size: 40px;
         text-align: center;
-        }
+    }
 
     /*CONTENIDO DERECHA*/
 
@@ -593,59 +604,45 @@ text-transform: uppercase;
     }
 
     /*Tarjetas*/
-    .Titulo h2{
-   
-        font-size:5vw ;
+    .slider {
+        display: grid;
+        grid-template-areas:
+            "titulo"
+            "slider"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        background: #eee;
+    
     }
-    .tarjetas {
-        display: flex;
-        grid-area: tarjetas;
-        flex-wrap: wrap;
-        justify-content: center;
-        column-gap: 3vw;
-        row-gap: 1vw;
-        overflow-x: auto;
-        height: 80vh;
+    .Titulo h2 {
+        grid-area: titulo;
+        font-size: 5vw;
     }
-
+    .container-lugares{
+        grid-area: slider;
+    }
     .tarjeta {
-        height: 50vh;
+        height: 45vh;
         width: auto;
-        padding: 3vw;
+        padding: 3.5vw;
     }
 
-    .tarjeta .tarjeta-icono img {
-        height: 5vh;
-        width: auto;
-    }
-
-    .tarjeta .tarjeta-comentarios .tarjeta-comentarios-grilla {
-        display: flex;
-        column-gap: 0.3vw;
-    }
-
-    .tarjeta .tarjeta-comentarios .tarjeta-comentarios-grilla .tarjeta__comentario {
-        font-size: 2.3vw;
-    }
-
-    .tarjeta .tarjeta-lenguaje .tarjeta__lenguaje {
-        font-size: 2vw;
+     .tarjeta .tarjeta-lenguaje .tarjeta__lenguaje {
+        font-size: 2.7vw;
     }
 
     .tarjeta .tarjeta-titulo .tarjeta__titulo {
         text-transform: uppercase;
         font-size: 3.5vw;
     }
-
     .tarjeta .tarjeta-descripcion .tarjeta__descripcion {
         font-size: 3vw;
         line-height: 1.5;
         width: 73vw;
     }
-
     .tarjeta .tarjeta-boton a {
         font-size: 3vw;
-        color: #1b62fa;
     }
 
     .footer-container {
@@ -711,132 +708,130 @@ text-transform: uppercase;
     .copywright-tag {
         font-size: 2.5vw;
     }
- /*boton whatsapp*/
- .chat-box-header h5{
-    font-size: 3vw;
- }
- .mensaje{
-    font-size: 3vw;
-    
- }
- .chat-box-body a{
-    font-size: 3vw;
- }
- #chat-box-toggle{
-    font-size: 3vw;
-    
- }
- .btn-whatsapp {
-    background-color: #25d366;
-    height: 4vh;
-    width: 35vw;
-    text-align: start;
-    
-}
-/*Modal*/
-.modal-dialog{
 
-    width: 82%;
-}
-}
+    /*boton whatsapp*/
+    .chat-box-header h5 {
+        font-size: 3vw;
+    }
 
-.modal-content{
+    .mensaje {
+        font-size: 3vw;
 
-border-radius: 0;
-height: 100vh;
-overflow-y: scroll;
-background-color: #ffffff;
+    }
+
+    .chat-box-body a {
+        font-size: 3vw;
+    }
+
+    #chat-box-toggle {
+        font-size: 3vw;
+
+    }
+
+    .btn-whatsapp {
+        background-color: #25d366;
+        width: 32vw;
+        text-align: start;
+
+    }
+
+    /*Modal*/
+    .modal-dialog {
+        width: 82%;
+    }
 }
 
-.modal-header{
+.modal-content {
 
-display: flex;
-justify-content: space-between;
-align-items: center;
-width: 88%;
-margin: 0 auto;
-padding-bottom: 16px;
-border-bottom: 2px solid #fefefe;
+    border-radius: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #ffffff;
 }
 
-.modal-header img{
+.modal-header {
 
-width: 140px;
-height: 66px;
-margin-top: 17.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    margin: 0 auto;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #fefefe;
 }
 
-.modal-header .btn-close{
-
-background: transparent;
-opacity: 1;
+.modal-header img {
+    width: 140px;
+    height: 66px;
+    margin-top: 17.5px;
 }
 
-.modal-header i{
+.modal-header .btn-close {
 
-color: #000000;
-font-size: 30px;
+    background: transparent;
+    opacity: 1;
 }
 
-.modal-body{
-
-width: 88%;
-margin: 0 auto;
-padding: 75px 0 0 0;
-flex: unset;
+.modal-header i {
+    color: #000000;
+    font-size: 30px;
 }
 
-.modal-body .modal-line{
+.modal-body {
 
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: flex-start;
-padding: 7px 0;
-margin-bottom: 50px;
-cursor: pointer;
-transition: all .5s ease;
-color: #000000;
-border-bottom: 1px solid #000000;
+    width: 88%;
+    margin: 0 auto;
+    padding: 75px 0 0 0;
+    flex: unset;
 }
 
-.modal-body .modal-line:hover{
-
-color: #999999;
-border-bottom: 1px solid #999999;
+.modal-body .modal-line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 7px 0;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: all .5s ease;
+    color: #000000;
+    border-bottom: 1px solid #000000;
 }
 
-.modal-line a{
+.modal-body .modal-line:hover {
 
-font-size: 17px;
-font-weight: 500;
-letter-spacing: 2.5px;
-color: #000000;
+    color: #999999;
+    border-bottom: 1px solid #999999;
 }
 
-.modal-line i{
+.modal-line a {
 
-color: currentColor;
-font-size: 30px;
-width: 35px;
-margin-right: 15px;
-padding: 0 0 3px 3px;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    color: #000000;
 }
 
+.modal-line i {
+    color: currentColor;
+    font-size: 30px;
+    width: 35px;
+    margin-right: 15px;
+    padding: 0 0 3px 3px;
+}
+.mobile-modal-footer {
 
-.mobile-modal-footer{
-
-width: 87%;
-margin: 0 auto;
-padding: 20% 0;
-display: flex;
-justify-content: space-between;
-align-items: center;
-font-size: 25px;
-color: #000000;
+    width: 87%;
+    margin: 0 auto;
+    padding: 20% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    color: #000000;
 }
 
-.mobile-modal-footer i:hover{
-color: #999999;
+.mobile-modal-footer i:hover {
+    color: #999999;
 
 }

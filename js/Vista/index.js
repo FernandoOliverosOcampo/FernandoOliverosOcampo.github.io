@@ -53,7 +53,7 @@ const Vista = {
       
       botonPagina.innerHTML = `
       <a target="_blank" href="${element.github}">Ver
-      repositorio en github<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      repositorio en github <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
       <a target="_blank" href="${element.url}">Visitar
       página <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
       `
@@ -61,7 +61,7 @@ const Vista = {
     }else{
       botonPagina.innerHTML=`
       <a target="_blank" href="${element.github}">Ver
-      repositorio en github<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      repositorio en github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
       `
       tarjeta.appendChild(botonPagina);
     }   
@@ -76,6 +76,7 @@ const Vista = {
 export default Vista;
 
 document.addEventListener('DOMContentLoaded', function () {
+  
   /*CONTROLADOR*/
   Controlador.transitionSmooth();
   Controlador.btn_whatsapp();
