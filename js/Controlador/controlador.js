@@ -124,8 +124,8 @@ const Controlador = {
             }
         }
 
-        // Inicia la animación de escritura de palabra cada 200 milisegundos
-        setInterval(typeWord, 300);
+        // Inicia la animación de escritura de palabra cada 400 milisegundos
+        setInterval(typeWord, 400);
 
 
     },
