@@ -3,388 +3,241 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./imagenes/ico.png" type="image/x-icon">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Desarrollador web y software con experencia manejando lenguajes como Java y Python,
-                                      desarrollo de sitios web utilizando las herramientas HTML, CSS y JS y cuento con un 
-                                      portafolio de un sin numeros de trabajos realizados">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    desarrollo de sitios web utilizando las herramientas HTML, CSS y JS y cuento con un 
+    portafolio de un sin numeros de trabajos realizados">
+    <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desarrollador web y software Fernando Oliveros Ocampo</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="./imagenes/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Desarrollador Web | Fernando Oliveros</title>
 </head>
 
 <body>
-    <div class="principal-contenido">
-        <div class="contenido-izquierda">
-            <nav class="menu">
-                <div class="iconos">
 
-                    <div class="icono icono-menu">
-                        <a href="index.html"><ion-icon class="icon" name="home-outline"></ion-icon></i></a>
+    <header>
+
+        <div class="container-fluid">
+
+            <div class="navb-logo">
+                <img src="./imagenes/ico.png" alt="Logo">
+            </div>
+
+            <div class="navb-items d-none d-xl-flex">
+
+                <div class="item">
+                    <a href="#quiensoy">¿Quien soy?</a>
+                </div>
+
+                <div class="item">
+                    <a href="#portafolio">Portafolio</a>
+                </div>
+
+                <div class="item">
+                    <a href="#habilidades">Habilidades</a>
+                </div>
+
+                <div class="item">
+                    <a href="#contactame">Contáctame</a>
+                </div>
+            </div>
+
+            <!-- Button trigger modal -->
+            <div class="mobile-toggler d-lg-none">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <img src="./imagenes/ico.png" alt="Logo">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                                    class="fa-solid fa-xmark"></i></button>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <div class="modal-line">
+                                <i class="fa-sharp fa-solid fa-user"></i></i><a href="#quiensoy">¿Quien soy?</a>
+                            </div>
+
+                            <div class="modal-line">
+                                <i class="fa-sharp fa-solid fa-folder-open"></i></i><a href="#portafolio">Portafolio</a>
+                            </div>
+
+                            <div class="modal-line">
+                                <i class="fa-sharp fa-solid fa-sliders"></i> <a href="#habilidades">Habilidades</a>
+                            </div>
+
+                            <div class="modal-line">
+                                <i class="fa-sharp fa-solid fa-phone"></i><a href="#contactame">Contáctame</a>
+                            </div>
+
+                        </div>
+
+                        <div class="mobile-modal-footer">
+
+                            <a target="_blank" href="https://www.instagram.com/fer_oliveros/"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a target="_blank"
+                                href="https://www.linkedin.com/in/fernando-antonio-oliveros-ocampo-687075269/"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a target="_blank" href="https://twitter.com/fer_oliveros22"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/fercho.oliverosocampo/"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                        </div>
                     </div>
-
-                    <div class="icono icono-menu-2">
-
-                        <a data-target="#mi-modal2"><ion-icon class="icon" name="bag-outline"></ion-icon></i></a>
-                    </div>
-
-                    <div class="icono icono-menu-3">
-                        <a data-target="#mi-modal"><ion-icon class="icon" name="chatbubble-outline"></ion-icon></i></a>
-                    </div>
-
-                </div>
-            </nav>
-        </div>
-
-        <div class="contenido-derecha">
-            <div class="contenido">
-                <div class="titulo">
-                    <H1>Desarrollador web y software</H1>
-                </div>
-                <div class="concepto">
-                    <h2><b>¿Quien soy?</b></h2>
-                    <p>Me llamo <b>Fernando Antonio Oliveros Ocampo</b>, tengo 22 años, nací en el municipio de Manatí -
-                        Atlantico
-                        apasionado por la tecnologia y los deportes, estudiante de ingenieria de sistemas y computacion,
-                        ademas estudiante de ingles contando actualmente con el nivel B1, cuento con la capacidad de
-                        buscar las mejores soluciones a los problemas que enfrento y salir adelante, capacidad de
-                        trabajo en equipo,
-                        quiero ser desarrollado web y cuento con gran conocimiento en <b>Html</b>, <b>Css</b> y
-                        <b>JavaScript</b>,
-                        además de <b>Java</b> y <b>Pyhton</b>.
-                    </p>
-
-                </div>
-                <div class="imagen">
-                    <img src="./imagenes/fercho.jpg" alt="Imagen">
-                </div>
-                <div class="boton">
-                    <a target="_blank" href="https://api.whatsapp.com/send?phone=573058290062" class="contacto"><i
-                            class="fab fa-whatsapp"></i> Contactame</a>
                 </div>
             </div>
 
         </div>
-
-        <footer class="footer-distributed">
-
-            <div class="footer-left">
-
-                <p class="footer-links">Ing. Fernando Antonio Oliveros Ocampo
-                </p>
-
-                <p>Fernando Oliveros Ocampo &copy; 2023</p>
+    </header>
+    <div class="estructuraPagina">
+        <header class="banner-container">
+            <div class="contenido-banner">
+                <div class="container-banner">
+                    <h1 id="text">Desarrollador
+                        <span id="dynamic-text">web</span>
+                    </h1>
+                </div>
             </div>
+          
+        </header>
 
-            <div class="footer-right">
+        <section>
+            <div class="contenido-derecha" id="quiensoy">
+                <div class="contenido">
+                    <div class="concepto">
+                        <h2><b>¿Quien soy?</b></h2>
+                        <p>Me llamo <b>Fernando Antonio Oliveros Ocampo</b>, tengo 22 años, nací en el municipio de
+                            Manatí -
+                            Atlantico
+                            apasionado por la tecnologia y los deportes, estudiante de ingenieria de sistemas y
+                            computacion,
+                            ademas estudiante de ingles contando actualmente con el nivel B1, cuento con la capacidad de
+                            buscar las mejores soluciones a los problemas que enfrento y salir adelante, capacidad de
+                            trabajo en equipo,
+                            quiero ser desarrollado web y cuento con gran conocimiento en <b>Html</b>, <b>Css</b> y
+                            <b>JavaScript</b>,
+                            además de <b>Java</b> y <b>Pyhton</b>.
+                        </p>
 
-                <a  target="_blank" href="https://www.facebook.com/fercho.oliverosocampo"><i class="fab fa-facebook-f"></i></a>
-                <a target="_blank" href="https://www.instagram.com/fer_oliveros/"><i class="fab fa-instagram"></i></a>
-                <a target="_blank" href="https://api.whatsapp.com/send?phone=573058290062"><i class="fab fa-whatsapp"></i></a>
-                <a target="_blank" href="https://github.com/FernandoOliverosOcampo?tab=repositories"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="imagen">
+                        <img src="./imagenes/imagen.jpeg" alt="Imagen">
+                    </div>
+
+                </div>
 
             </div>
+        </section>
+        <section class="Titulo-portafolio" id="portafolio">
+            <div class="Titulo">
+                <h2>Portafolio</h2>
+            </div>
+        </section>
+        <section class="container-lugares-slider">
+
+            <div class="container-lugares">
+
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper" id="swiperWrapper">
 
 
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
 
+        <!-- footer -->
+        <footer>
+            <div class="footer-container" id="contactame">
+                <div class="footer-logo">
+                    <h2>Fernando Oliveros Ocampo</h2>
+                    <p>Si puedes imaginarlo, puedes programarlo</p>
+                    <a href="https://www.facebook.com/fercho.oliverosocampo/" target="_blank"
+                        class="fa fa-facebook redes"></a>
+                    <a href="https://twitter.com/fer_oliveros22" target="_blank" class="fa icons fa-twitter redes"></a>
+                    <a href="https://www.instagram.com/fer_oliveros/" target="_blank" class="fa fa-instagram redes"></a>
+                </div>
+                <div class="footer-links">
+                    <div class="platform">
+                        <h3><i class="fa-solid fa-envelope"></i> Correo electrónico</h3>
+                        <ul>
+                            <a href="foliverosocampo0322@gmail.com">
+                                <li>foliverosocampo0322@gmail.com</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="learning">
+                        <h3><i class="fa-solid fa-location-dot"></i> Dirección</h3>
+                        <ul>
+                            <a href="https://www.google.com/maps/place/Cra.+51+%2348-18,+Nte.+Centro+Historico,+Barranquilla,+Atl%C3%A1ntico/@10.9911059,-74.7885891,17z/data=!3m1!4b1!4m5!3m4!1s0x8ef42d7b7fa80cf1:0xc34e0e1285f8c332!8m2!3d10.9911006!4d-74.7860142?hl=es&entry=ttu"
+                                target="_blank">
+                                <li>Cra 51 #48-18</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="about">
+                        <h3><i class="fa-solid fa-mobile-screen"></i> Celular</h3>
+                        <ul>
+                            <a href="https://wa.me/573058290062" target="_blank">
+                                <li>305-829-00-62</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-contactus">
+                    <h2>Contáctanos</h2>
+                    <a href="https://wa.me/573058290062" target="_blank">
+                        <button>Enviar mensaje</button>
+                    </a>
+
+                </div>
+            </div>
+            <div class="copywright-tag">&copyCopyright Fernando Oliveros. All rights reserved</div>
         </footer>
-        <!-- Modales -->
-        <div id="mi-modal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p class="con">Contacto</p>
-                <div class="contact">
-                    <p>
-                        Me puedes contactar a través de mis redes sociales.
-                    </p>
-                </div>
-                <div class="cartas">
-                    <a target="_blank" href="https://www.facebook.com/fercho.oliverosocampo" class="card facebook">
-                        <div class="overlay"></div>
-                        <div class="circle">
-                            <i class=" logo fab fa-facebook-f" aria-hidden="true"></i>
-                        </div>
-                        <p>Facebook</p>
-                    </a>
-                    <a target="_blank" href="https://www.instagram.com/fer_oliveros/" class="card instagram">
-                        <div class="overlay"></div>
-                        <div class="circle">
-                            <i class=" logo fab fa-instagram" aria-hidden="true"></i>
-                        </div>
-                        <p>Instagram</p>
-                    </a>
-                    <a target="_blank" href="https://api.whatsapp.com/send?phone=573058290062" class="card whatsapp">
-                        <div class="overlay"></div>
-                        <div class="circle">
-                            <i class=" logo  fab fa-whatsapp" aria-hidden="true"></i>
-                        </div>
-                        <p>Whatsapp</p>
-                    </a>
-                    <a target="_blank" href="https://github.com/FernandoOliverosOcampo?tab=repositories"
-                        class="card github">
-                        <div class="overlay"></div>
-                        <div class="circle">
-                            <i class=" logo fab fa-github" aria-hidden="true"></i>
-                        </div>
-                        <p>Github</p>
-                    </a>
 
+        <!-- Boton de whatsapp -->
+        <div id="floating-button">
+            <div id="chat-circle" class="btn btn-raised">
+                <img src="./imagenes/icon-whatsapp.svg" alt="Contactar por whatsapp">
+            </div>
+            <div id="chat-box" class="chat-box">
+                <div class="chat-box-header">
+                    <h5>Chat de WhatsApp</h5>
+                    <span id="chat-box-toggle">&times;</span>
+                </div>
+                <div class="chat-box-body">
+                    <p class="mensaje">¡Hola! ¿En qué puedo ayudarte?</p>
+                    <a href="https://wa.me/573058290062" target="_blank" class="btn btn-whatsapp"><i
+                            class="fa fa-whatsapp"></i>Contáctame</a>
                 </div>
             </div>
-
-
         </div>
+    </div>
 
-        <div id="mi-modal2" class="modal">
-            <div class="modal-contenido">
-                <span class="close">&times;</span>
-                <div class="proyectos-grilla">
-                    <div class="tarjetas">
+    <!-- scripts -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/1a5bcd4a97.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/Vista/index.js"></script>
 
-                        <div class="tarjeta">
-                            <div class="tarjeta-icono">
-                                <img src="imagenes/lenguajes/html5.png" alt="imagen html">
-                                <img src="imagenes/lenguajes/css.png" alt="imagen css">
-                                <img src="imagenes/lenguajes/javascript.png" alt="imagen js">
-                            </div>
-                            <div class="tarjeta-lenguaje">
-                                <p class="tarjeta__lenguaje">HTML + CSS + JS</p>
-                            </div>
-                            <div class="tarjeta-titulo">
-                                <h3 class="tarjeta__titulo"> <span class="color-verde">Portafolio</span>
-                                </h3>
-                            </div>
-                            <div class="tarjeta-descripcion">
-                                <p class="tarjeta__descripcion">Portafolio con informacion personal y links de los proyectos desarrollados.</p>
-                            </div>
-
-                            <div class="tarjeta-comentarios">
-                                <div class="tarjeta-comentarios-grilla">
-                                    <div class="tarjeta-comentarios-bloque">
-                                        <p class="tarjeta__comentario">HTML + CSS + JS</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tarjeta-boton">
-                                <a target="_blank"
-                                    href="https://github.com/FernandoOliverosOcampo">Ver
-                                    repositorio en github<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                <a target="_blank" href=" https://fernandooliverosocampo.github.io/">Ver página
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-
-                            </div>
-                        </div>
-                        
-                        <div class="tarjeta">
-                            <div class="tarjeta-icono">
-                                <img src="imagenes/lenguajes/html5.png" alt="imagen html">
-                                <img src="imagenes/lenguajes/css.png" alt="imagen css">
-                            </div>
-                            <div class="tarjeta-lenguaje">
-                                <p class="tarjeta__lenguaje">HTML + CSS</p>
-                            </div>
-                            <div class="tarjeta-titulo">
-                                <h3 class="tarjeta__titulo"> <span class="color-verde">Football fantasy page</span>
-                                </h3>
-                            </div>
-                            <div class="tarjeta-descripcion">
-                                <p class="tarjeta__descripcion">Información acerca del football fantasy de la NFL.</p>
-                            </div>
-
-                            <div class="tarjeta-comentarios">
-                                <div class="tarjeta-comentarios-grilla">
-                                    <div class="tarjeta-comentarios-bloque">
-                                        <p class="tarjeta__comentario">HTML + CSS</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tarjeta-boton">
-                                <a target="_blank"
-                                    href="https://github.com/FernandoOliverosOcampo/FootballFantasy.github.io">Ver
-                                    repositorio en github<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                <a target="_blank" href="https://fernandooliverosocampo.github.io/FootballFantasy.github.io/">Ver página
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-
-                            </div>
-                        </div>
-                        <div class="tarjeta">
-                            <div class="tarjeta-icono">
-                                <img src="imagenes/lenguajes/html5.png" alt="imagen html">
-                                <img src="imagenes/lenguajes/css.png" alt="imagen css">
-                                <img src="imagenes/lenguajes/javascript.png" alt="imagen js">
-                            </div>
-                            <div class="tarjeta-lenguaje">
-                                <p class="tarjeta__lenguaje">HTML + CSS + JS</p>
-                            </div>
-                            <div class="tarjeta-titulo">
-                                <h3 class="tarjeta__titulo"> <span class="color-verde">Calculadora con dark and ligth theme</span>
-                                </h3>
-                            </div>
-                            <div class="tarjeta-descripcion">
-                                <p class="tarjeta__descripcion">Calculadora basica con funcionalidad de cambio de temas.</p>
-                            </div>
-
-                            <div class="tarjeta-comentarios">
-                                <div class="tarjeta-comentarios-grilla">
-                                    <div class="tarjeta-comentarios-bloque">
-                                        <p class="tarjeta__comentario">HTML + CSS + JS</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tarjeta-boton">
-                                <a target="_blank"
-                                    href="https://github.com/FernandoOliverosOcampo/CALCULADORA-WEB">Ver
-                                    repositorio en github<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                        </div>
-                        <div class="tarjeta">
-                            <div class="tarjeta-icono">
-                                <img src="imagenes/lenguajes/java.png" alt="imagen java">
-                                <img src="imagenes/lenguajes/sql.png" alt="imagen sql">
-                                <!-- <img src="imagenes/lenguajes/flask.png" alt="">-->
-
-                            </div>
-                            <div class="tarjeta-lenguaje">
-                                <p class="tarjeta__lenguaje">Java + SQL</p>
-                            </div>
-                            <div class="tarjeta-titulo">
-                                <h3 class="tarjeta__titulo"> <span class="color-verde">Catpy tech</span></h3>
-                            </div>
-                            <div class="tarjeta-descripcion">
-                                <p class="tarjeta__descripcion">software creado para la empresa catpy tech con el lenguaje java y sql para una BD local</p>
-                            </div>
-                            <div class="tarjeta-comentarios">
-                                <div class="tarjeta-comentarios-grilla">
-                                    <div class="tarjeta-comentarios-bloque">
-                                        <p class="tarjeta__comentario">JAVA + SQL </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tarjeta-boton">
-                                <a target="_blank" href="https://github.com/FernandoOliverosOcampo/Catpy-Tech">Ver
-                                    repositorio en github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="tarjeta">
-                            <div class="tarjeta-icono">
-                                <img src="imagenes/lenguajes/python.png" alt="imagen python">
-                                <img src="imagenes/lenguajes/sql.png" alt="imagen sql">
-                                <!-- <img src="imagenes/lenguajes/flask.png" alt="">-->
-
-                            </div>
-                            <div class="tarjeta-lenguaje">
-                                <p class="tarjeta__lenguaje">Python + FLASK</p>
-                            </div>
-                            <div class="tarjeta-titulo">
-                                <h3 class="tarjeta__titulo"> <span class="color-verde">CRUD - API con FLASK</span></h3>
-                            </div>
-                            <div class="tarjeta-descripcion">
-                                <p class="tarjeta__descripcion">API creada con FLASK con un CRUD de información de
-                                    vehiculos
-                                    de renault almacenada en supabase.</p>
-                            </div>
-
-                            <div class="tarjeta-comentarios">
-                                <div class="tarjeta-comentarios-grilla">
-                                    <div class="tarjeta-comentarios-bloque">
-                                        <p class="tarjeta__comentario"> SQL+ FLASK</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tarjeta-boton">
-                                <a target="_blank" href="https://github.com/FernandoOliverosOcampo/-info_renault-FLASK-API">Ver
-                                    repositorio en github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="tarjeta">
-                            <div class="tarjeta-icono">
-                                <img src="imagenes/lenguajes/html5.png" alt="imagen html">
-                                <img src="imagenes/lenguajes/css.png" alt="imagen css">
-                            </div>
-                            <div class="tarjeta-lenguaje">
-                                <p class="tarjeta__lenguaje">HTML + CSS</p>
-                            </div>
-                            <div class="tarjeta-titulo">
-                                <h3 class="tarjeta__titulo"> <span class="color-verde"> Sitio web para sistema basados en reglas</span>
-                                </h3>
-                            </div>
-                            <div class="tarjeta-descripcion">
-                                <p class="tarjeta__descripcion">Página para realizar el test del sistema basados en
-                                    reglas y ver los resultados.</p>
-                            </div>
-                            <div class="tarjeta-comentarios">
-                                <div class="tarjeta-comentarios-grilla">
-                                    <div class="tarjeta-comentarios-bloque">
-                                        <p class="tarjeta__comentario">HTML + CSS</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tarjeta-boton">
-                                <a target="_blank" href="https://github.com/FernandoOliverosOcampo/Cancer-de-mama-sitio-web">Ver repositorio en
-                                    github
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                <a target="_blank" href="https://fernandooliverosocampo.github.io/FernandoOliverosOcampo.github.io-Cancer-de-mama-sitio-web/">Ver página
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-
-                            </div>
-                        </div>
-
-                        <div class="tarjeta">
-                            <div class="tarjeta-icono">
-                                <img src="imagenes/lenguajes/html5.png" alt="imagen html">
-                                <img src="imagenes/lenguajes/css.png" alt="imagen css">
-                                <img src="imagenes/lenguajes/javascript.png" alt="imagen js">
-                            </div>
-                            <div class="tarjeta-lenguaje">
-                                <p class="tarjeta__lenguaje">HTML + CSS + JS</p>
-                            </div>
-                            <div class="tarjeta-titulo">
-                                <h3 class="tarjeta__titulo"> <span class="color-verde"> Información vehiculos
-                                        renault</span>
-                                </h3>
-                            </div>
-                            <div class="tarjeta-descripcion">
-                                <p class="tarjeta__descripcion">Contiene un CRUD e información en gráficas que están
-                                    almacenadas en supabase.</p>
-                            </div>
-
-                            <div class="tarjeta-comentarios">
-                                <div class="tarjeta-comentarios-grilla">
-                                    <div class="tarjeta-comentarios-bloque">
-                                        <p class="tarjeta__comentario">HTML + CSS + JS</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tarjeta-boton">
-                                <a target="_blank"
-                                    href="https://github.com/FernandoOliverosOcampo/informacion_vehiculos_renault">Ver
-                                    repositorio en github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                <a target="_blank"
-                                    href="https://zacksperez43.github.io/informacion_vehiculos_renault/">Visitar
-                                    página <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                        </div>
-                        
-                    </div>
-
-                </div>
-            </div>
-
-            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-            <script src="https://kit.fontawesome.com/9092cd4d7f.js" crossorigin="anonymous"></script>
-            <script src="./js/index.js"></script>
 </body>
 
 </html>
