@@ -664,6 +664,7 @@ header .mobile-toggler {
 
     .footer-logo p {
         font-size: 3.5vw;
+        line-height: 200%
     }
 
     .footer-links {
