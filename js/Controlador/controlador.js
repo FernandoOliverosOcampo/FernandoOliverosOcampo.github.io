@@ -1,4 +1,4 @@
-upimport Modelo from '../Modelo/modelo.js'
+import Modelo from '../Modelo/modelo.js'
 import Vista from '../Vista/index.js'
 const Controlador = {
     /* Agregar contenido */
@@ -124,8 +124,8 @@ const Controlador = {
             }
         }
 
-        // Inicia la animación de escritura de palabra cada 400 milisegundos
-        setInterval(typeWord, 300);
+        // Inicia la animación de escritura de palabra cada 200 milisegundos
+        setInterval(typeWord, 200);
 
 
     },
