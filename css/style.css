@@ -341,9 +341,11 @@ header .mobile-toggler {
     grid-area: titulo;
     text-align: center;
     
+    
 }
 .Titulo h2{
     margin-top:20px;
+    font-weight: bold;
 }
 
 .container-lugares {
@@ -454,6 +456,35 @@ header .mobile-toggler {
     font-size: 1vw;
     margin: 5px;
     padding: 0.1vw;
+}
+/*Habilidades*/
+.container{
+    height: auto;
+    width: 100vw;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.container-habilidades{
+    text-align: start;
+    margin-left: 20px;
+}
+.titulo-habilidades h3{
+    text-align: center;
+    font-weight: bold;
+    
+}
+.label-habilidades{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.progress{
+    margin: 30px;
+    background: #fff;
+}
+.progress-bar{
+    background: #1700e6;
+    
+
 }
 
 /* FOOTER */
@@ -602,7 +633,14 @@ header .mobile-toggler {
         display: grid;
         justify-content: center;
     }
-
+    /*HABILIDADES*/
+    .titulo-habilidades h3{
+        font-size: 5vw;
+        
+    }
+    .label-habilidades{
+        font-size: 3vw;
+    }
     /*Tarjetas*/
     .slider {
         display: grid;

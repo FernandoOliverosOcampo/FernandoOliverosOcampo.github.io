@@ -81,7 +81,7 @@ const Controlador = {
                     var targetId = link.getAttribute('href');
                     var targetElement = document.querySelector(targetId);
                     targetElement.scrollIntoView({ behavior: 'smooth' });
-                }, 500);
+                }, 300);
             });
         });
     },
