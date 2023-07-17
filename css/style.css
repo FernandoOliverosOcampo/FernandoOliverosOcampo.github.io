@@ -458,33 +458,53 @@ header .mobile-toggler {
     padding: 0.1vw;
 }
 /*Habilidades*/
-.container{
+.container-lenguajes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: auto;
     width: 100vw;
     margin-top: 20px;
     margin-bottom: 30px;
+    flex-wrap: wrap;
 }
-.container-habilidades{
-    text-align: start;
-    margin-left: 20px;
-}
-.titulo-habilidades h3{
+.titulo-habilidades h4{
     text-align: center;
     font-weight: bold;
-    
+    margin-top: 15px ;
+    font-size: 2.5vw;
 }
-.label-habilidades{
+.tarjeta-lenguajes{
+    display: grid;
+    grid-template-areas:
+        "icono"
+        "titulo";
+    height: 30vh;
+    border-radius: 2%;
+    background-color: #ffffff;
+    color: rgb(5, 5, 5);
+    width: auto;
+    padding: 1vw;
+    flex-wrap: wrap;
+    margin: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.imagenes-tarjeta{
+    grid-area: icono;
+}
+.icono-titulo{
+    grid-area: titulo;
+    place-content: center;
+}
+.imagenes-tarjeta img{
+    margin: 10px;
+    height: 20vh;
+    width: auto;
+}
+.icono__titulo{
     text-transform: uppercase;
     font-weight: bold;
-}
-.progress{
-    margin: 30px;
-    background: #fff;
-}
-.progress-bar{
-    background: #1700e6;
-    
-
+    text-align: center;
 }
 
 /* FOOTER */
@@ -578,18 +598,13 @@ header .mobile-toggler {
 }
 
 
-@media(max-width: 986px) {
-    html {
-        font-size: 45%;
-    }
-}
-
 @media(max-width: 768px) {
 
     /*Banner*/
     #text {
         font-size: 40px;
         text-align: center;
+        
     }
 
     /*CONTENIDO DERECHA*/
@@ -698,6 +713,7 @@ header .mobile-toggler {
 
     .footer-logo h2 {
         font-size: 4vw;
+        margin-top: 15px;
     }
 
     .footer-logo p {
@@ -766,7 +782,6 @@ header .mobile-toggler {
         font-size: 3vw;
 
     }
-
     .btn-whatsapp {
         background-color: #25d366;
         width: 32vw;
@@ -778,8 +793,20 @@ header .mobile-toggler {
     .modal-dialog {
         width: 82%;
     }
+    /*Lenguajes*/
+.titulo-habilidades h4{
+    font-size: 4.5vw;
 }
-
+.tarjeta-lenguajes{
+    height: 20vh;
+}
+.imagenes-tarjeta img{
+    height: 12vh;
+}
+.icono__titulo{
+    font-size: 3.5vw;
+}
+/*modal*/
 .modal-content {
 
     border-radius: 0;
@@ -873,4 +900,5 @@ header .mobile-toggler {
 .mobile-modal-footer i:hover {
     color: #999999;
 
+}
 }

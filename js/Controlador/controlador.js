@@ -10,6 +10,15 @@ const Controlador = {
             console.log(err)
         }
     },
+      /* Agregar contenido */
+      async mostrarContenidoLenguajes() {
+        try {
+            const res = await Modelo.mostrarDatosLenguajes();
+            Vista.mostrarLenguajes(res.data)
+        } catch (err) {
+            console.log(err)
+        }
+    },
 
     /*DOM*/
     btn_whatsapp: function () {
