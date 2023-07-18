@@ -127,8 +127,8 @@ header .mobile-toggler {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, hsla(320, 20%, 97%, 0.781), hsla(320, 20%, 97%, 0.781)), url(../imagenes/portada.webp);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /*background-color: #ff0000;*/
-    background-repeat: no-repeat;
+
+    background-repeat: round;
 
 }
 
