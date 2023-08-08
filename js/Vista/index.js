@@ -44,9 +44,10 @@ const Vista = {
         </div>
     `;
 
-botonPagina.innerHTML=`
-     <a target="_blank" href="${element.github}">Ver repositorio en github <i class="fa-solid fa-arrow-up-right-from-square"></i></a> ${elemento.pagina === 'si'? `<a target="_blank" href="${element.url}">Visitar página <i class="fa-solid fa-arrow-up-right-from-square"></i></a>` :``}`
+     botonPagina.innerHTML=`
+     <a target="_blank" href="${element.github}">Ver repositorio en github <i class="fa-solid fa-arrow-up-right-from-square"></i></a> ${element.pagina === 'si'? `<a target="_blank" href="${element.url}">Visitar página <i class="fa-solid fa-arrow-up-right-from-square"></i></a>` :``}`
      tarjeta.appendChild(botonPagina);
+      
       this.agregarImagenes(imagenesCortadas, tarjetaIcono);
       tarjeta.append(tarjetaIcono);
       swiperSlider.append(tarjeta);
