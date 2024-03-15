@@ -2,6 +2,18 @@ import Modelo from '../Modelo/modelo.js'
 import Vista from '../Vista/index.js'
 const Controlador = {
     /* Agregar contenido */
+    iniciarPagina(){
+        /*CONTROLADOR*/
+        Controlador.mostrarContenido();
+        Controlador.mostrarContenidoLenguajes();
+        Controlador.transitionSmooth();
+        Controlador.btn_whatsapp();
+        Controlador.slider_lugar();
+        // Controlador.cambioBanner();
+       
+
+    },
+
     async mostrarContenido() {
         try {
             const res = await Modelo.mostrarDatosProyectos();
@@ -73,6 +85,7 @@ const Controlador = {
             }
         });
     },
+
     transitionSmooth: function () {
         var modalLinks = document.querySelectorAll('[data-bs-dismiss="modal"]');
 
@@ -94,50 +107,50 @@ const Controlador = {
             });
         });
     },
-    cambioBanner: function () {
-        // Obtén el elemento de texto dinámico
-        var dynamicText = document.getElementById('dynamic-text');
+    // cambioBanner: function () {
+    //     // Obtén el elemento de texto dinámico
+    //     var dynamicText = document.getElementById('dynamic-text');
 
-        // Crea un arreglo con las palabras a intercambiar
-        var words = ['web','frontend', 'backend'];
+    //     // Crea un arreglo con las palabras a intercambiar
+    //     var words = ['web','frontend', 'backend'];
 
-        // Inicializa el índice de palabra actual
-        var currentWordIndex = 0;
+    //     // Inicializa el índice de palabra actual
+    //     var currentWordIndex = 0;
 
-        // Inicializa el índice de letra actual
-        var currentLetterIndex = 0;
+    //     // Inicializa el índice de letra actual
+    //     var currentLetterIndex = 0;
 
-        // Función para mostrar las letras de la palabra una por una
-        function typeWord() {
-            // Obtén la palabra actual
-            var currentWord = words[currentWordIndex];
+    //     // Función para mostrar las letras de la palabra una por una
+    //     function typeWord() {
+    //         // Obtén la palabra actual
+    //         var currentWord = words[currentWordIndex];
 
-            // Obtén la parte de la palabra ya escrita
-            var typedWord = currentWord.slice(0, currentLetterIndex + 1);
+    //         // Obtén la parte de la palabra ya escrita
+    //         var typedWord = currentWord.slice(0, currentLetterIndex + 1);
 
-            // Muestra la parte escrita en el elemento dinámico
-            dynamicText.textContent = typedWord;
+    //         // Muestra la parte escrita en el elemento dinámico
+    //         dynamicText.textContent = typedWord;
 
-            // Incrementa el índice de letra actual
-            currentLetterIndex++;
+    //         // Incrementa el índice de letra actual
+    //         currentLetterIndex++;
 
-            // Si se ha mostrado toda la palabra, reinicia los índices
-            if (currentLetterIndex === currentWord.length) {
-                currentLetterIndex = 0;
-                currentWordIndex++;
+    //         // Si se ha mostrado toda la palabra, reinicia los índices
+    //         if (currentLetterIndex === currentWord.length) {
+    //             currentLetterIndex = 0;
+    //             currentWordIndex++;
 
-                // Si se alcanza el final del arreglo, reinicia el índice a 0
-                if (currentWordIndex === words.length) {
-                    currentWordIndex = 0;
-                }
-            }
-        }
+    //             // Si se alcanza el final del arreglo, reinicia el índice a 0
+    //             if (currentWordIndex === words.length) {
+    //                 currentWordIndex = 0;
+    //             }
+    //         }
+    //     }
 
-        // Inicia la animación de escritura de palabra cada 200 milisegundos
-        setInterval(typeWord, 300);
+    //     // Inicia la animación de escritura de palabra cada 200 milisegundos
+    //     setInterval(typeWord, 300);
 
 
-    },
+    // },
 
 
 }
