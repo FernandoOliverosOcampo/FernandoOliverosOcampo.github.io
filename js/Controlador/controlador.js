@@ -6,9 +6,9 @@ const Controlador = {
         /*CONTROLADOR*/
         Controlador.mostrarContenido();
         Controlador.mostrarContenidoLenguajes();
-        Controlador.transitionSmooth();
         Controlador.btn_whatsapp();
         Controlador.slider_lugar();
+        Controlador.transitionSmooth();
         // Controlador.cambioBanner();
        
 
@@ -86,27 +86,31 @@ const Controlador = {
         });
     },
 
-    transitionSmooth: function () {
+    transitionSmooth() {
+        var smoothScrollLinks = document.getElementsByClassName('smooth-scroll');
         var modalLinks = document.querySelectorAll('[data-bs-dismiss="modal"]');
-
+        
+        for (var i = 0; i < smoothScrollLinks.length; i++) {
+            smoothScrollLinks[i].addEventListener('click', function (event) {
+                event.preventDefault();
+                var target = this.getAttribute('href');
+                document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+            });
+        }
+    
         modalLinks.forEach(function (link) {
             link.addEventListener('click', function (event) {
                 event.preventDefault();
-
-                // Cierra el modal
                 var modal = bootstrap.Modal.getInstance(document.getElementById('navbModal'));
                 modal.hide();
-
-                // Espera un breve momento para que el modal se cierre completamente
+                var targetId = link.getAttribute('href');
+                var targetElement = document.querySelector(targetId);
                 setTimeout(function () {
-                    // Realiza el scroll a la sección correspondiente
-                    var targetId = link.getAttribute('href');
-                    var targetElement = document.querySelector(targetId);
                     targetElement.scrollIntoView({ behavior: 'smooth' });
                 }, 300);
             });
         });
-    },
+    }
     // cambioBanner: function () {
     //     // Obtén el elemento de texto dinámico
     //     var dynamicText = document.getElementById('dynamic-text');

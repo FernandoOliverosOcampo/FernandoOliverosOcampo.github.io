@@ -11,17 +11,34 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+.botones{
+    display: flex;
+}
 
-button {
-    width: 10vw;
+.botones .boton-cv button {
+    width: 13vw;
     height: 5vh;
     cursor: pointer;
-    border: 1px solid transparent;
-    background-color: #c6f2ff;
+    border: 1px solid black;
+    background-color: #ffffff;
     font-size: 1vw;
     font-weight: 400;
     border-radius: 0.3vw;
     margin: 10px;
+    font-size: 1.2vw;
+}
+.botones .boton-wp button {
+    width: 13vw;
+    height: 5vh;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: #25d366;
+    font-size: 1vw;
+    font-weight: 400;
+    border-radius: 0.3vw;
+    margin: 10px;
+    color: white;
+    font-size: 1.2vw;
 }
 
 button:hover {
@@ -912,5 +929,16 @@ header .mobile-toggler {
 .mobile-modal-footer i:hover {
     color: #999999;
 
+}
+.botones .boton-cv button {
+    width: 30vw;
+    height: 3.5vh;
+  
+    font-size: 3vw;
+}
+.botones .boton-wp button {
+    width: 30vw;
+    height: 3.5vh;
+    font-size: 3vw;
 }
 }
