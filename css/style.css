@@ -1,9 +1,24 @@
+@import url(normalice.css); 
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap";
 
 * {
     margin: 0;
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
+    user-select: none
+}
+:root {
+    --negroClaro: rgb(29, 30, 32);
+    --negroOscuro: #191919;
+    --blanco: rgb(245, 245, 245);
+    --blancoClaro: #ffffff;
+    --grisClaro: rgb(155, 156, 157);
+    --amarillo: #FFC857;
+    --verde: #59bd85;
+    --tamanoParrafos: 20px;
+    --tamanoTitulos: 50px;
+    --tamanoSubTitulos: 25px;
+    --tamanoIconos: 35px;
 }
 
 body {
@@ -190,10 +205,19 @@ header .mobile-toggler {
     grid-area: concepto;
 }
 
-.contenido-derecha .contenido .imagen {
+.contenido-derecha .contenido .contenedor-imagen-redes {
     grid-area: imagen;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
 }
+.contenedor-imagen-redes .redes{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2.5vw;
+    text-align: center;
 
+}
 
 .contenido-derecha .concepto {
     width: 45vw;
@@ -340,30 +364,26 @@ header .mobile-toggler {
 }
 
 /*CONTENIDO LUGAR*/
-.slider {
-    display: grid;
-    grid-template-areas:
-        "titulo"
-        "slider"
-    ;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    background: #eeeded;
-
+.slider{
+    display: flex;
+    flex-direction: column;
+    background:white;
 }
 
 .container-lugares-slider {
-    background: #eeeded;
+    /* grid-area: slider; */
+    background: white;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 60vh;
     overflow: hidden;
     position: relative;
-    margin-bottom: 10px;
+    
 }
-.Titulo{
-    grid-area: titulo;
+.slider .Titulo{
+    /* grid-area: titulo; */
     text-align: center;
     
     
@@ -374,15 +394,16 @@ header .mobile-toggler {
 }
 
 .container-lugares {
-    grid-area: slider;
-    width: 100%;
+    
+    width: 100vw;
     padding: 10px 40px;
     margin-bottom: 10px;
 }
 
 .container-lugares .swiper-container {
-    height: 100%;
-    width: 100%;
+    /* height: 60vh; */
+    width:100%;
+    padding: 2vw 1vw;
     overflow: hidden;
 }
 
@@ -390,10 +411,12 @@ header .mobile-toggler {
     position: relative;
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: white;
     border-radius: 15px;
     text-align: start;
-    box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+    /* height: 50vh; */
+    padding: 1vw 0;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
 }
 
@@ -408,7 +431,6 @@ header .mobile-toggler {
     border-radius: 2%;
     background-color: #ffffff;
     color: rgb(5, 5, 5);
-    width: auto;
     padding: 1vw;
 }
 
@@ -482,16 +504,40 @@ header .mobile-toggler {
     margin: 5px;
     padding: 0.1vw;
 }
-/*Habilidades*/
-.container-lenguajes{
+.boton-ver-proyectos{
     display: flex;
+    place-content: center;
+}
+.boton-ver-proyectos button {
+    width: 17vw;
+    height: 5vh;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: #ffffff;
+    font-size: 1vw;
+    font-weight: 400;
+    border-radius: 0.3vw;
+    margin: 10px;
+    font-size: 1.2vw;
+}
+
+
+/*Habilidades*/
+.habilidades{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: auto;
     width: 100vw;
-    margin-top: 20px;
-    margin-bottom: 30px;
     flex-wrap: wrap;
+    background: white;
+}
+.container-lenguajes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .titulo-habilidades h4{
     text-align: center;
@@ -622,6 +668,144 @@ header .mobile-toggler {
     color: black;
 }
 
+/*  CONTENIDO EXPERIENCIA */
+
+.contenido-experiencia {
+    padding: 10vh 2vw;
+    background-color: white;
+}
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.descripcion .contenido{
+    text-align: justify;
+    width: 80dvw;
+    font-size: 1vw;
+}
+
+.contenido-experiencia .contenedor-experiencia {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+}
+
+.contenedor-experiencia .cabecera-experiencia {
+    grid-area: titulo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor-experiencia .cabecera-experiencia .titulo h1 {
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+    color: var(--negroOscuro);
+}
+
+.cabecera-experiencia .descripcion p {
+    font-size: 1rem;
+    color: var(--negroOscuro);
+}
+
+.contenedor-experiencia .contenido-tarjetas {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 5vh;
+    column-gap: 2vw;
+    flex-wrap: nowrap;
+    
+}
+
+.contenedor-experiencia .contenido-tarjetas .tarjeta-experiencia {
+    display: grid;
+    grid-template-areas:
+        "imagen cabecera"
+        "cuerpo cuerpo"
+        "pie pie";
+    grid-template-columns: auto 1fr;
+    padding: 5vh 2vw;
+    column-gap: 2vw;
+    row-gap: 2vh;
+    color: var(--negroOscuro);
+    border-radius: 0.5vw;
+    text-align: justify;
+    width: 40vw;
+    line-height: 1.6;
+}
+
+.tarjeta-experiencia .imagen {
+    grid-area: imagen;
+    display: flex;
+    align-items: start;
+}
+
+.tarjeta-experiencia .imagen img {
+    height: 7vh;
+}
+
+.tarjeta-experiencia .cabecera {
+    grid-area: cabecera;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5vh;
+}
+
+.tarjeta-experiencia .cabecera .titulo p {
+    font-size: 1.2rem;
+    color: var(--negroOscuro);
+    font-weight: 700;
+}
+
+.tarjeta-experiencia .cabecera .fecha p {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.tarjeta-experiencia .cuerpo {
+    grid-area: cuerpo;
+    padding: 0 2vw;
+}
+
+.tarjeta-experiencia .cuerpo .descripcion .lista-actividades, .sub-lista{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.tarjeta-experiencia .cuerpo .descripcion .lista-actividades li {
+    color: var(--negroOscuro);
+    font-size: 1rem;
+}
+
+.tarjeta-experiencia .cuerpo .descripcion .lista-actividades .sub-lista{
+    margin: 0 2vw;
+}
+
+.tarjeta-experiencia .cuerpo .descripcion .lista-actividades .sub-lista .sub-sub-lista{
+    margin: 0 1vw;
+}
+
+.tarjeta-experiencia .pie {
+    grid-area: pie;
+}
+
+.tarjeta-experiencia .pie .herramientas {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    column-gap: 0.5vw;
+}
+
+.tarjeta-experiencia .pie .herramientas img {
+    height: var(--tamanoIconos);
+}
+
+
 
 @media(max-width: 768px) {
 
@@ -630,6 +814,9 @@ header .mobile-toggler {
         font-size: 40px;
         text-align: center;
         
+    }
+    header {
+        height: 9vh;
     }
     header .navb-logo  {
         
@@ -678,6 +865,18 @@ header .mobile-toggler {
         display: grid;
         justify-content: center;
     }
+    .boton-ver-proyectos button {
+        width: 45vw;
+        height: 3.5vh;
+        font-size: 3vw;
+    }
+    .contenedor-imagen-redes .redes{
+       
+        font-size: 7vw;
+        
+    
+    }
+    
     /*HABILIDADES*/
     .titulo-habilidades h3{
         font-size: 5vw;
@@ -695,7 +894,7 @@ header .mobile-toggler {
         ;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        background: #eee;
+       
     
     }
     .Titulo h2 {
@@ -792,6 +991,24 @@ header .mobile-toggler {
 
     .copywright-tag {
         font-size: 2.5vw;
+    }
+
+    /*SECCION EXPERIENCIA*/
+    .contenedor-experiencia .cabecera-experiencia .titulo h1 {
+        font-size: 5vw;
+    }
+    .contenedor-experiencia .contenido-tarjetas {
+       flex-direction: column;
+        
+    }
+    .contenedor-experiencia .contenido-tarjetas .tarjeta-experiencia {
+        width: 90vw;
+        
+    }
+    .tarjeta-experiencia .pie .herramientas {
+        display: flex;
+        justify-content: center;
+        
     }
 
     /*boton whatsapp*/
