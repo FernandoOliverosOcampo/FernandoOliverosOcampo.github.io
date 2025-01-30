@@ -5,7 +5,7 @@ const Modelo ={
 
         const res = await axios({
           method: "GET",
-          url: `https://hqlzuquiyrarqwyeslkl.supabase.co/rest/v1/Datosproyecto?select=*`,
+          url: `https://hqlzuquiyrarqwyeslkl.supabase.co/rest/v1/Datosproyecto?select=*&order=id_proyecto.desc`,
           headers: config.headers,
         });
         return res;
